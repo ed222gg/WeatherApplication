@@ -1,0 +1,42 @@
+{
+	"city":
+	{
+		"id":1283240,
+		"name":"Kathmandu",
+		"findname":"KATHMANDU",
+		"country":"NP",
+		"coord":
+			{
+				"lon":85.316666,
+				"lat":27.716667
+			},
+		"zoom":7
+	},
+	"time":1394871602,
+	"main":
+	{
+		"temp":297.15,
+		"pressure":1020,
+		"humidity":33,
+		"temp_min":297.15,
+		"temp_max":297.15
+	},
+	"wind":
+		{
+			"speed":3.1,
+			"deg":240
+		},
+	"clouds":
+		{
+			"all":40
+		},						
+	"weather":
+		[
+			{
+				"id":802,
+				"main":"Clouds",
+				"description":"scattered clouds",
+				"icon":"03d"
+			}
+		]
+}
