@@ -9,6 +9,9 @@ namespace WeatherApplication.Models.Webservices
 {
     public class WeatherWebservice
     {
+
+
+
         public IEnumerable<Weather> ByCityId(string id)
         {
             string rawJson;
@@ -17,6 +20,9 @@ namespace WeatherApplication.Models.Webservices
             {
                 rawJson = reader.ReadToEnd();
             }
+
+            var result = JObject.Parse(rawJson);
+
             var j = JArray.Parse(rawJson);
             var j2 = JArray.Parse(rawJson).Select(w => new Weather(w));
             return JArray.Parse(rawJson).Select(w => new Weather(w)).ToList();
